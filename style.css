@@ -1,0 +1,98 @@
+/* Generalne postavke */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f0; /* Svijetlo roza pozadina */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Glavni kontejner */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.5); /* Lagano sjenčanje s roza nijansom */
+    width: 350px;
+    text-align: center;
+}
+
+/* Naslov */
+h1 {
+    margin-bottom: 20px;
+    color: #ff69b4; /* Jarko roza boja naslova */
+}
+
+/* Stil za unos */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Polje za unos */
+#task-input {
+    width: 70%;
+    padding: 8px;
+    border: 2px solid #ffb6c1; /* Pastelna roza ivica */
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+/* Dugme */
+button {
+    padding: 8px 15px;
+    background-color: #ff69b4; /* Jarko roza dugme */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #ff85c5; /* Svjetlija roza nijansa na hover */
+}
+
+/* Lista zadataka */
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Stil za zadatke */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #ffe4e1; /* Blijedo roza pozadina zadataka */
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #d3d3d3; /* Siva boja za završen zadatak */
+}
+
+/* Stil za dugmad u zadatku */
+.complete-btn, .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Ikone u bojama */
+.complete-btn {
+    color: #32cd32; /* Zelena za završene zadatke */
+}
+
+.delete-btn {
+    color: #ff69b4; /* Roza za brisanje */
+}
